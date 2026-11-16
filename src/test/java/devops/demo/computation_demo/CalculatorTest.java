@@ -90,6 +90,12 @@ public class CalculatorTest {
             testInfo.getDisplayName()
         );
     }
+    
+    
+    @Test
+    void divide_nonzeroDenominator() {
+        assertEquals(4, calculator.divide(12, 3));
+    }
 
     @AfterAll
     static void afterAll() {
